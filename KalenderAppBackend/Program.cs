@@ -1,5 +1,8 @@
 using KalenderAppBackend.Data;
+using KalenderAppBackend.Interfaces;
 using KalenderAppBackend.Models;
+using KalenderAppBackend.Repos;
+using KalenderAppBackend.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -45,8 +48,12 @@ builder.Services.AddSwaggerGen(option =>
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+    options.UseSqlServer(
+        builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING"),
+        sqlOptions => sqlOptions.EnableRetryOnFailure()  // Aktiviert die Wiederholungslogik bei transienten Fehlern
+    );
 });
+
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(options => {
     options.Password.RequireDigit = true;
@@ -79,6 +86,9 @@ builder.Services.AddAuthentication(options =>
         )
     };
 });
+
+builder.Services.AddScoped<ITokenService, TokenService>();
+builder.Services.AddScoped<ICalendarRepo, CalendarRepo>();
 
 var app = builder.Build();
 

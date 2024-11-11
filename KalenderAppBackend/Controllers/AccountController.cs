@@ -1,6 +1,8 @@
 ﻿using KalenderAppBackend.Dtos.Account;
+using KalenderAppBackend.Extensions;
 using KalenderAppBackend.Interfaces;
 using KalenderAppBackend.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
@@ -15,12 +17,17 @@ public class AccountController : ControllerBase
     private readonly UserManager<AppUser> _userManager;
     private readonly ITokenService _tokenService;
     private readonly SignInManager<AppUser> _signInManager;
+    private readonly ICalendarRepo _calendarRepo;
 
-    public AccountController(UserManager<AppUser> userManager, ITokenService tokenService, SignInManager<AppUser> signInManager)
+    public AccountController(UserManager<AppUser> userManager
+        , ITokenService tokenService
+        , SignInManager<AppUser> signInManager
+        , ICalendarRepo calendarRepo)
     {
         _userManager = userManager;
         _tokenService = tokenService;
         _signInManager = signInManager;
+        _calendarRepo = calendarRepo;
     }
 
     [HttpPut("register")]
@@ -72,7 +79,7 @@ public class AccountController : ControllerBase
 
         var result = await _signInManager.CheckPasswordSignInAsync(user, loginDto.Password, false);
 
-        if(!result.Succeeded) return Unauthorized("Username not found and/or Password incorrect!");
+        if (!result.Succeeded) return Unauthorized("Username not found and/or Password incorrect!");
 
         return Ok(
             new NewUserDto
@@ -81,5 +88,23 @@ public class AccountController : ControllerBase
                 Email = user.Email,
                 Token = _tokenService.CreateToken(user)
             });
+    }
+
+    [HttpPost("assignCalendarId")]
+    [Authorize]
+    public async Task<IActionResult> AssignCalendarId(int calendarId)
+    {
+        var username = User.GetUsername();
+        var appUser = await _userManager.FindByNameAsync(username);
+        var calendar = await _calendarRepo.GetByIdAsync(calendarId);
+
+        if (calendar == null) return BadRequest("calendar not found");
+
+        appUser.CalendarId = calendar.Id;
+
+        var result = await _userManager.UpdateAsync(appUser);
+        if (!result.Succeeded) return BadRequest(result);
+
+        return Ok(result);
     }
 }
