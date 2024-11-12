@@ -3,40 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\models\\event.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\extensions\\claimextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\extensions\\claimextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EEED14D0-D5B6-4932-8163-DA765B53B500}|KalenderAppBackend.Tests\\KalenderAppBackend.Tests.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEED14D0-D5B6-4932-8163-DA765B53B500}|KalenderAppBackend.Tests\\KalenderAppBackend.Tests.csproj|solutionrelative:kalenderappbackend.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\models\\calendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\models\\calendar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\mappers\\calendarmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\mappers\\calendarmappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\extensions\\claimextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\extensions\\claimextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,115 +30,62 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Program.cs",
-              "RelativeDocumentMoniker": "KalenderAppBackend\\Program.cs",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Program.cs",
-              "RelativeToolTip": "KalenderAppBackend\\Program.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAAADMAAABNAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AccountControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend.Tests\\AccountControllerTests.cs",
+              "RelativeDocumentMoniker": "KalenderAppBackend.Tests\\AccountControllerTests.cs",
+              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend.Tests\\AccountControllerTests.cs",
+              "RelativeToolTip": "KalenderAppBackend.Tests\\AccountControllerTests.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAmwJsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:42:34.174Z",
+              "WhenOpened": "2024-11-11T11:21:13.4Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "KalenderAppBackend\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "KalenderAppBackend\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T14:40:38.925Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\appsettings.json",
-              "RelativeDocumentMoniker": "KalenderAppBackend\\appsettings.json",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\appsettings.json",
-              "RelativeToolTip": "KalenderAppBackend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAACaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-07T14:40:05.434Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Event.cs",
-              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Models\\Event.cs",
-              "RelativeDocumentMoniker": "KalenderAppBackend\\Models\\Event.cs",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Models\\Event.cs",
-              "RelativeToolTip": "KalenderAppBackend\\Models\\Event.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T12:26:40.976Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "ClaimExtensions.cs",
               "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Extensions\\ClaimExtensions.cs",
               "RelativeDocumentMoniker": "KalenderAppBackend\\Extensions\\ClaimExtensions.cs",
               "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Extensions\\ClaimExtensions.cs",
               "RelativeToolTip": "KalenderAppBackend\\Extensions\\ClaimExtensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T11:20:43.511Z"
-            },
+              "WhenOpened": "2024-11-11T11:59:34.862Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "0fe1ee03-9271-4d83-8ab8-0ee8541fef4f",
+        "Display": 2,
+        "X": 281,
+        "Y": 288,
+        "Width": 1644,
+        "Height": 869,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "KalenderAppBackend\\Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\AccountController.cs",
               "RelativeToolTip": "KalenderAppBackend\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAuwG4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAMwE0AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T13:41:11.133Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Calendar.cs",
-              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Models\\Calendar.cs",
-              "RelativeDocumentMoniker": "KalenderAppBackend\\Models\\Calendar.cs",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Models\\Calendar.cs",
-              "RelativeToolTip": "KalenderAppBackend\\Models\\Calendar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T12:07:52.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CalendarController.cs",
-              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\CalendarController.cs",
-              "RelativeDocumentMoniker": "KalenderAppBackend\\Controllers\\CalendarController.cs",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\CalendarController.cs",
-              "RelativeToolTip": "KalenderAppBackend\\Controllers\\CalendarController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowB4AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T12:01:12.649Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CalendarMappers.cs",
-              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Mappers\\CalendarMappers.cs",
-              "RelativeDocumentMoniker": "KalenderAppBackend\\Mappers\\CalendarMappers.cs",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Mappers\\CalendarMappers.cs",
-              "RelativeToolTip": "KalenderAppBackend\\Mappers\\CalendarMappers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-14T13:32:31.253Z"
+              "WhenOpened": "2024-11-11T06:37:43.018Z",
+              "EditorCaption": ""
             }
           ]
         }
