@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "k7Iipc1+lg4=",
+  "dgSpecHash": "Gj7aCkfY/h4=",
   "success": true,
   "projectFilePath": "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\uemit\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\uemit\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\uemit\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
+    "C:\\Users\\uemit\\.nuget\\packages\\coverlet.collector\\6.0.2\\coverlet.collector.6.0.2.nupkg.sha512",
     "C:\\Users\\uemit\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
     "C:\\Users\\uemit\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\uemit\\.nuget\\packages\\jwt\\10.1.1\\jwt.10.1.1.nupkg.sha512",

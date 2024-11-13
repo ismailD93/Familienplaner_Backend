@@ -106,6 +106,12 @@
               "target": "Package",
               "version": "[6.8.1, )"
             },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "xunit": {
               "target": "Package",
               "version": "[2.9.2, )"

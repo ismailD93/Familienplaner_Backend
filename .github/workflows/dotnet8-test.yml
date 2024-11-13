@@ -1,0 +1,39 @@
+name: .NET 8 CI
+
+on:
+  push:
+    branches:
+      - development  # Der Workflow wird bei jedem Push auf den Entwicklungszweig ausgeführt
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # Verwende Linux, da es schneller ist und die meisten .NET-Funktionen unterstützt
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0'  # Speziell für .NET 8
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Build solution
+      run: dotnet build --no-restore --configuration Release
+
+    - name: Run tests with coverage
+      run: dotnet test --no-build --configuration Release --collect:"XPlat Code Coverage" --results-directory TestResults
+      continue-on-error: false
+
+    - name: Check coverage
+      run: |
+        COVERAGE=$(grep -oP '(?<=line-rate=")[0-9]+\.[0-9]+' TestResults/*/coverage.cobertura.xml)
+        echo "Code coverage is $COVERAGE%"
+        if (( $(echo "$COVERAGE < 80.0" | bc -l) )); then
+          echo "Code coverage below 80%"
+          exit 1
+        fi
+      shell: bash
