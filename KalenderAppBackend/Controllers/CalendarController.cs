@@ -37,7 +37,7 @@ public class CalendarController : ControllerBase
         var calendar = await _calendarRepo.GetByIdAsync(id);
 
         if (calendar == null)
-            return null;
+            return BadRequest("id not found");
 
         return Ok(calendar.ToCalendarDto());
     }
@@ -51,6 +51,6 @@ public class CalendarController : ControllerBase
         var calendarModel = calendarDto.ToCalendarCreateDto();
         await _calendarRepo.CreateAsync(calendarModel);
 
-        return CreatedAtAction(nameof(GetById), new { id = calendarModel.Id }, calendarModel.ToCalendarDto());
+        return Ok(calendarModel.ToCalendarDto());
     }
 }

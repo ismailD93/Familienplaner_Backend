@@ -14,9 +14,9 @@ public class AccountControllerTests
 {
     private readonly Mock<UserManager<AppUser>> _mockUserManager;
     private readonly Mock<SignInManager<AppUser>> _mockSignInManager;
-    private Mock<ICalendarRepo> _mockCalendarRepo;
-    private Mock<ITokenService> _mockTokenService;
-    private AccountController _controller;
+    private readonly Mock<ICalendarRepo> _mockCalendarRepo;
+    private readonly Mock<ITokenService> _mockTokenService;
+    private readonly AccountController _controller;
 
     public AccountControllerTests()
     {
@@ -114,8 +114,9 @@ public class AccountControllerTests
 
         Assert.IsType<BadRequestObjectResult>(result);
     }
+
     [Fact]
-    public async Task Test_Succesfull_Login()
+    public async Task Test_Succesful_Login()
     {
         var user = new LoginDto { Username = "testUser", Password = "12345678" };
 
@@ -166,6 +167,7 @@ public class AccountControllerTests
 
         Assert.IsType<BadRequestObjectResult>(result);
     }
+
     [Fact]
     public async Task Test_Successful_AssignCalendarId()
     {
