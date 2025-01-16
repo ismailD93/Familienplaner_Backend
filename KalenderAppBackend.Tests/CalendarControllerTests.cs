@@ -4,7 +4,6 @@ using KalenderAppBackend.Interfaces;
 using KalenderAppBackend.Models;
 using Microsoft.AspNetCore.Mvc;
 using Moq;
-using Xunit.Sdk;
 
 namespace KalenderAppBackend.Tests;
 

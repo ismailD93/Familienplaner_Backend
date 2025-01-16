@@ -42,11 +42,11 @@ public class AccountControllerTests
                 _mockCalendarRepo.Object
             );
     }
-    private ClaimsPrincipal CreateClaimsPrincipal(string username)
+    private static ClaimsPrincipal CreateClaimsPrincipal(string username)
     {
         var claims = new List<Claim>
         {
-            new Claim("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname", username)
+            new("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname", username)
         };
 
         var identity = new ClaimsIdentity(claims, "TestAuthType");
@@ -172,8 +172,8 @@ public class AccountControllerTests
     public async Task Test_Successful_AssignCalendarId()
     {
         int calendarId = 1;
-        Calendar calendar = new Calendar() { Id = calendarId, Name = "testCalendar" };
-        AppUser user = new AppUser() { UserName = "testName", Email = "testEmail" };
+        Calendar calendar = new() { Id = calendarId, Name = "testCalendar" };
+        AppUser user = new() { UserName = "testName", Email = "testEmail" };
         var claimsPrincipal = CreateClaimsPrincipal("testUser");
 
         _controller.ControllerContext = new ControllerContext
@@ -206,8 +206,8 @@ public class AccountControllerTests
     public async Task Test_BadRequest_AssignCalendarId()
     {
         int calendarId = 1;
-        Calendar calendar = new Calendar() { Id = calendarId, Name = "testCalendar" };
-        AppUser user = new AppUser() { UserName = "testName", Email = "testEmail" };
+        Calendar calendar = new() { Id = calendarId, Name = "testCalendar" };
+        AppUser user = new() { UserName = "testName", Email = "testEmail" };
         var claimsPrincipal = CreateClaimsPrincipal("testUser");
 
         _controller.ControllerContext = new ControllerContext
@@ -239,8 +239,8 @@ public class AccountControllerTests
     public async Task Test_BadRequest_Calendar_AssignCalendarId()
     {
         int calendarId = 1;
-        Calendar calendar = new Calendar() { Id = calendarId, Name = "testCalendar" };
-        AppUser user = new AppUser() { UserName = "testName", Email = "testEmail" };
+        Calendar calendar = new() { Id = calendarId, Name = "testCalendar" };
+        AppUser user = new() { UserName = "testName", Email = "testEmail" };
         var claimsPrincipal = CreateClaimsPrincipal("testUser");
 
         _controller.ControllerContext = new ControllerContext

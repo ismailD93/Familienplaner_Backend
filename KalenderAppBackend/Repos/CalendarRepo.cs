@@ -15,7 +15,6 @@ public class CalendarRepo : ICalendarRepo
         _context = context;
     }
 
-
     public async Task<List<Calendar>> GetAllAsync()
     {
         List<Calendar> calendars = await _context.Calendars.Include(fm => fm.FamilyMembers).ToListAsync();
