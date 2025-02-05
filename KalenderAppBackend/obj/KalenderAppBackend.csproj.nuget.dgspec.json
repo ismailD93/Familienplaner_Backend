@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj": {}
+    "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj": {
+    "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
+        "projectUniqueName": "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
         "projectName": "KalenderAppBackend",
-        "projectPath": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
+        "projectPath": "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
         "packagesPath": "C:\\Users\\uemit\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\obj\\",
         "projectStyle": "PackageReference",
@@ -97,6 +97,18 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL.Design": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[8.0.2, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

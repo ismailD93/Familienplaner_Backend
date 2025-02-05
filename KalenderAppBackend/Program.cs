@@ -48,9 +48,8 @@ builder.Services.AddSwaggerGen(option =>
 
 builder.Services.AddDbContext<AppDbContext>(options =>
 {
-    options.UseSqlServer(
-        builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING"),
-        sqlOptions => sqlOptions.EnableRetryOnFailure()  // Aktiviert die Wiederholungslogik bei transienten Fehlern
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("POSTGRES_DATABASE")
     );
 });
 
