@@ -1,4 +1,5 @@
-﻿using KalenderAppBackend.Models;
+﻿using Castle.Components.DictionaryAdapter.Xml;
+using KalenderAppBackend.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -25,7 +26,7 @@ namespace KalenderAppBackend.Data
             builder.Entity<UserEvent>(x => x.HasKey(e => new { e.UserId, e.EventId }));
 
             builder.Entity<UserEvent>()
-                .HasOne(u => u.AppUser)
+                .HasOne(u => u.User)
                 .WithMany(u => u.UserEvents)
                 .HasForeignKey(u => u.UserId);
 

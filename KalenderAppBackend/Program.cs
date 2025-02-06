@@ -88,6 +88,10 @@ builder.Services.AddAuthentication(options =>
 
 builder.Services.AddScoped<ITokenService, TokenService>();
 builder.Services.AddScoped<ICalendarRepo, CalendarRepo>();
+builder.Services.AddScoped<IEventRepo, EventRepo>();
+builder.Services.AddScoped<IUserEventRepo, UserEventRepo>();
+builder.Services.AddScoped<IAccountRepo, AccountRepo>();
+
 
 var app = builder.Build();
 
