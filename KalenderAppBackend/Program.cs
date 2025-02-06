@@ -53,6 +53,16 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     );
 });
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAll",
+        policy =>
+        {
+            policy.AllowAnyOrigin()   // Erlaubt alle Domains (*)
+                  .AllowAnyMethod()   // Erlaubt GET, POST, PUT, DELETE, usw.
+                  .AllowAnyHeader();  // Erlaubt alle Header
+        });
+});
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(options => {
     options.Password.RequireDigit = true;
@@ -103,7 +113,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("AllowAll");
 app.UseAuthentication();
 app.UseAuthorization();
 
