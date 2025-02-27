@@ -14,7 +14,6 @@ public class CalendarRepo : ICalendarRepo
     {
         _context = context;
     }
-
     public async Task<List<Calendar>> GetAllAsync()
     {
         List<Calendar> calendars = await _context.Calendars.Include(fm => fm.FamilyMembers).ToListAsync();
@@ -25,7 +24,6 @@ public class CalendarRepo : ICalendarRepo
     {
         return await _context.Calendars.Include(fm => fm.FamilyMembers).FirstOrDefaultAsync(x => x.Id == id);
     }
-
     public async Task<Calendar> CreateAsync(Calendar calendarModel)
     {
         await _context.Calendars.AddAsync(calendarModel);

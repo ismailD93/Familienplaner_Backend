@@ -96,6 +96,11 @@ public class AccountController : ControllerBase
     {
         var username = User.GetUsername();
         var appUser = await _userManager.FindByNameAsync(username);
+        if (appUser == null)
+        {
+            return Unauthorized();
+        }
+
         var calendar = await _calendarRepo.GetByIdAsync(calendarId);
 
         if (calendar == null) return BadRequest("calendar not found");
@@ -106,5 +111,154 @@ public class AccountController : ControllerBase
         if (!result.Succeeded) return BadRequest(result);
 
         return Ok(result);
+    }
+
+    [HttpPut("changePassword")]
+    [Authorize]
+    public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordDto model)
+    {
+        if (string.IsNullOrWhiteSpace(model.OldPassword) || string.IsNullOrWhiteSpace(model.NewPassword))
+        {
+            return BadRequest("Both old and new passwords are required.");
+        }
+
+        var username = User.GetUsername();
+        var appUser = await _userManager.FindByNameAsync(username);
+        if (appUser == null)
+        {
+            return Unauthorized();
+        }
+
+        var result = await _userManager.ChangePasswordAsync(appUser, model.OldPassword, model.NewPassword);
+        if (!result.Succeeded) return BadRequest(result);
+
+        if (!result.Succeeded)
+        {
+            return BadRequest(result.Errors);
+        }
+
+        return Ok("Password changed successfully.");
+    }
+
+    [HttpPut("changeEmail")]
+    [Authorize]
+    public async Task<IActionResult> ChangeEmail([FromBody] ChangeEmailDto model)
+    {
+        if (string.IsNullOrWhiteSpace(model.NewEmail))
+        {
+            return BadRequest("New email is required.");
+        }
+
+        var username = User.GetUsername();
+        var appUser = await _userManager.FindByNameAsync(username);
+        if (appUser == null)
+        {
+            return Unauthorized();
+        }
+
+        var result = _userManager.SetEmailAsync(appUser, model.NewEmail);
+
+        return Ok("Email changed successfully.");
+    }
+
+    [HttpPut("setAvatar")]
+    [Authorize]
+    public async Task<IActionResult> SetAvatar(IFormFile file)
+    {
+        if (file == null || file.Length == 0)
+        {
+            return BadRequest("Invalid file.");
+        }
+
+        if (file.Length > 2 * 1024 * 1024) // Max 2MB
+        {
+            return BadRequest("File size exceeds 2MB.");
+        }
+
+        var username = User.GetUsername();
+        var appUser = await _userManager.FindByNameAsync(username);
+        if (appUser == null)
+        {
+            return Unauthorized();
+        }
+
+        var allowedExtensions = new[] { ".jpg", ".jpeg", ".png" };
+        var fileExtension = Path.GetExtension(file.FileName).ToLower();
+        if (!allowedExtensions.Contains(fileExtension))
+        {
+            return BadRequest("Invalid file type. Only .jpg, .jpeg, .png allowed.");
+        }
+
+        var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
+        if (!Directory.Exists(uploadsFolder))
+        {
+            Directory.CreateDirectory(uploadsFolder);
+        }
+
+        var fileName = $"{Guid.NewGuid()}{fileExtension}";
+        var filePath = Path.Combine(uploadsFolder, fileName);
+
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+            await file.CopyToAsync(stream);
+        }
+
+        appUser.AvatarUrl = $"/uploads/{fileName}";
+        var result = await _userManager.UpdateAsync(appUser);
+        if (!result.Succeeded)
+        {
+            return BadRequest(result.Errors);
+        }
+
+        return Ok(new { AvatarUrl = appUser.AvatarUrl });
+    }
+
+    [HttpDelete("deleteAvatar")]
+    [Authorize]
+    public async Task<IActionResult> DeleteAvatar()
+    {
+        var username = User.GetUsername();
+        var appUser = await _userManager.FindByNameAsync(username);
+        if (appUser == null)
+        {
+            return Unauthorized();
+        }
+
+        if (!string.IsNullOrEmpty(appUser.AvatarUrl))
+        {
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", appUser.AvatarUrl.TrimStart('/'));
+            if (System.IO.File.Exists(filePath))
+            {
+                System.IO.File.Delete(filePath);
+            }
+
+            appUser.AvatarUrl = null;
+            var result = await _userManager.UpdateAsync(appUser);
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors);
+            }
+        }
+
+        return Ok("Avatar deleted.");
+    }
+
+    [HttpGet("getAvatar")]
+    [Authorize]
+    public async Task<IActionResult> GetAvatar()
+    {
+        var username = User.GetUsername();
+        var appUser = await _userManager.FindByNameAsync(username);
+        if (appUser == null)
+        {
+            return Unauthorized();
+        }
+
+        if (appUser == null || string.IsNullOrEmpty(appUser.AvatarUrl))
+        {
+            return NotFound("No avatar found.");
+        }
+
+        return Ok(new { AvatarUrl = appUser.AvatarUrl });
     }
 }

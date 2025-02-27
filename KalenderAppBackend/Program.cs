@@ -60,7 +60,7 @@ builder.Services.AddCors(options =>
         {
             policy.AllowAnyOrigin()   // Erlaubt alle Domains (*)
                   .AllowAnyMethod()   // Erlaubt GET, POST, PUT, DELETE, usw.
-                  .AllowAnyHeader();  // Erlaubt alle Header
+                  .AllowAnyHeader();   // Erlaubt alle Header
         });
 });
 
@@ -102,7 +102,6 @@ builder.Services.AddScoped<IEventRepo, EventRepo>();
 builder.Services.AddScoped<IUserEventRepo, UserEventRepo>();
 builder.Services.AddScoped<IAccountRepo, AccountRepo>();
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -112,8 +111,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
 app.UseCors("AllowAll");
+app.UseHttpsRedirection();
 app.UseAuthentication();
 app.UseAuthorization();
 
