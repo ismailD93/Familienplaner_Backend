@@ -92,14 +92,18 @@ public class AccountController : ControllerBase
 
     [HttpGet("getCalendarIdByUsername")]
     [Authorize]
-    public async Task<IActionResult> GetCalendarIdByUsername(string userName)
+    public async Task<IActionResult> GetCalendarIdByUsername()
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
 
-        var user = await _userManager.FindByNameAsync(userName.ToLower());
+        var userName = User.GetUsername();
+        var user = await _userManager.FindByNameAsync(userName);
 
-        if (user == null) return Unauthorized("Invalid Username");
+        if (user == null)
+        {
+            return Unauthorized("Invalid Username");
+        }
 
         var result = user.CalendarId;
 
