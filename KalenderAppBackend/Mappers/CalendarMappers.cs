@@ -4,14 +4,25 @@ using KalenderAppBackend.Models;
 
 namespace KalenderAppBackend.Mappers;
 
-public static class CalendarMappers
+public static class Calendarmappers
 {
+    public static FamilyMemberDto ToFamilyMemberDto(this AppUser familyMember)
+    {
+        return new FamilyMemberDto
+        {
+            Id = familyMember.Id,
+            Name = familyMember.UserName,
+            CalendarId = familyMember.CalendarId ?? 0,
+        };
+    }
+
     public static CalendarDto ToCalendarDto(this Calendar calendarModel)
     {
         return new CalendarDto
         {
             Id = calendarModel.Id,
             Name = calendarModel.Name,
+            FamilyMembers = calendarModel.FamilyMembers?.Select(ToFamilyMemberDto).ToList(),
         };
     }
 

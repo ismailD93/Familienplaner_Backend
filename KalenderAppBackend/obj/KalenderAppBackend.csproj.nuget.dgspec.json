@@ -11,7 +11,7 @@
         "projectName": "KalenderAppBackend",
         "projectPath": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
         "packagesPath": "C:\\Users\\uemit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\obj\\",
+        "outputPath": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
