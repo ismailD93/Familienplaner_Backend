@@ -90,6 +90,24 @@ public class AccountController : ControllerBase
             });
     }
 
+    [HttpGet]
+    [Authorize]
+    public async Task<IActionResult> GetCalendarIdByUsername([FromBody] string userName)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var user = await _userManager.FindByNameAsync(userName.ToLower());
+
+        if (user == null) return Unauthorized("Invalid Username");
+
+        var result = user.CalendarId;
+
+        if (result == null) return NotFound(result);
+
+        return Ok(result);
+    }
+
     [HttpPost("assignCalendarId")]
     [Authorize]
     public async Task<IActionResult> AssignCalendarId(int calendarId)
@@ -210,7 +228,7 @@ public class AccountController : ControllerBase
             return BadRequest(result.Errors);
         }
 
-        return Ok(new { AvatarUrl = appUser.AvatarUrl });
+        return Ok(new { appUser.AvatarUrl });
     }
 
     [HttpDelete("deleteAvatar")]
