@@ -90,9 +90,9 @@ public class AccountController : ControllerBase
             });
     }
 
-    [HttpGet]
+    [HttpGet("getCalendarIdByUsername")]
     [Authorize]
-    public async Task<IActionResult> GetCalendarIdByUsername([FromBody] string userName)
+    public async Task<IActionResult> GetCalendarIdByUsername(string userName)
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
