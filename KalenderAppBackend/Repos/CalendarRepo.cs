@@ -87,4 +87,15 @@ public class CalendarRepo : ICalendarRepo
         await _context.SaveChangesAsync();
         return user;
     }
+
+    public async Task<List<AppUser>> GetAllFamilyMembers(int calendarId) 
+    {
+        var familyMembers = _context.Users
+            .OfType<AppUser>()
+            .Include(u => u.UserEvents)
+                .ThenInclude(ue => ue.Event)
+                .ToList();       
+
+        return familyMembers;
+    }
 }
