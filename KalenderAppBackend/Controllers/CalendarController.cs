@@ -42,6 +42,20 @@ public class CalendarController : ControllerBase
         return Ok(calendar.ToCalendarDto());
     }
 
+    [HttpGet("getByName")]
+    public async Task<IActionResult> GetByName(string name)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var calendar = await _calendarRepo.GetCalendarByName(name);
+
+        if (calendar == null)
+            return BadRequest("no calendar found with this name");
+
+        return Ok(calendar.ToCalendarDto());
+    }
+
     [HttpPut("addCalendar")]
     public async Task<IActionResult> Create([FromBody] CreateCalendarDto calendarDto)
     {
@@ -53,4 +67,5 @@ public class CalendarController : ControllerBase
 
         return Ok(calendarModel.ToCalendarDto());
     }
+
 }

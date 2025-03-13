@@ -98,4 +98,14 @@ public class CalendarRepo : ICalendarRepo
 
         return familyMembers;
     }
+
+    public async Task<Calendar?> GetCalendarByName(string name)
+    {
+        var calendar = await _context.Calendars.FirstOrDefaultAsync(x => x.Name == name);
+
+        if (calendar == null)
+            return null;
+
+        return calendar;
+    }
 }
