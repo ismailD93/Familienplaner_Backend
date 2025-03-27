@@ -5,4 +5,5 @@ namespace KalenderAppBackend.Interfaces;
 public interface ITokenService
 {
     string CreateToken(AppUser user);
+    string GetUsernameFromToken(string token);
 }

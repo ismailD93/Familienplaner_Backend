@@ -283,4 +283,23 @@ public class AccountController : ControllerBase
 
         return Ok(new { AvatarUrl = appUser.AvatarUrl });
     }
+
+    [HttpGet("getUserByToken")]
+    [Authorize]
+    public async Task<IActionResult> GetUserByToken(string token)
+    {
+        var username = _tokenService.GetUsernameFromToken(token);
+        var appUser = await _userManager.FindByNameAsync(username);
+        if (appUser == null)
+        {
+            return Unauthorized();
+        }
+
+        return Ok(new GetUserDto
+        {
+            Id = appUser.Id,
+            Email = appUser.Email,
+            Username = appUser.UserName
+        });
+    }
 }

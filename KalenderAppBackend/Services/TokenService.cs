@@ -43,4 +43,18 @@ public class TokenService : ITokenService
 
         return tokenHandler.WriteToken(token);
     }
+
+    public string GetUsernameFromToken(string token)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+
+        if (!tokenHandler.CanReadToken(token))
+            throw new ArgumentException("token is not valid");
+
+        var jwtToken = tokenHandler.ReadJwtToken(token);
+
+        var usernameClaim = jwtToken.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.GivenName);
+
+        return usernameClaim?.Value ?? throw new Exception("username was not found in token");
+    }
 }

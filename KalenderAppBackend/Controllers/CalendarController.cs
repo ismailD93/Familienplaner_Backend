@@ -47,7 +47,7 @@ public class CalendarController : ControllerBase
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
-
+    
         var calendar = await _calendarRepo.GetCalendarByName(name);
 
         if (calendar == null)
@@ -67,5 +67,4 @@ public class CalendarController : ControllerBase
 
         return Ok(calendarModel.ToCalendarDto());
     }
-
 }
