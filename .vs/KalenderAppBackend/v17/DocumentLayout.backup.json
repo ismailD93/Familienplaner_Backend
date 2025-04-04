@@ -89,6 +89,10 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "NewUserDto.cs",
@@ -98,8 +102,7 @@
               "RelativeToolTip": "KalenderAppBackend\\Dtos\\Account\\NewUserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:41:24.764Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:41:24.764Z"
             },
             {
               "$type": "Document",
@@ -111,8 +114,7 @@
               "RelativeToolTip": "KalenderAppBackend\\Dtos\\Account\\LoginDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:42:35.105Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:42:35.105Z"
             },
             {
               "$type": "Document",
@@ -124,8 +126,7 @@
               "RelativeToolTip": "KalenderAppBackend\\Dtos\\Account\\GetUserDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:42:25.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:42:25.885Z"
             },
             {
               "$type": "Document",
@@ -137,8 +138,7 @@
               "RelativeToolTip": "KalenderAppBackend\\Interfaces\\ITokenService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:38:04.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T10:38:04.677Z"
             },
             {
               "$type": "Document",
@@ -150,12 +150,7 @@
               "RelativeToolTip": "KalenderAppBackend\\Services\\TokenService.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAuwC4AAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T10:23:07.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "WhenOpened": "2025-03-27T10:23:07.716Z"
             },
             {
               "$type": "Document",
@@ -163,9 +158,9 @@
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "KalenderAppBackend\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\AccountController.cs*",
-              "RelativeToolTip": "KalenderAppBackend\\Controllers\\AccountController.cs*",
-              "ViewState": "AgIAAA0BAAAAAAAAAAAgwCkBAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "KalenderAppBackend\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAawCIAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T14:55:42.263Z",
               "EditorCaption": ""
@@ -188,12 +183,11 @@
               "Title": "CalendarController.cs",
               "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\CalendarController.cs",
               "RelativeDocumentMoniker": "KalenderAppBackend\\Controllers\\CalendarController.cs",
-              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\CalendarController.cs*",
-              "RelativeToolTip": "KalenderAppBackend\\Controllers\\CalendarController.cs*",
+              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\CalendarController.cs",
+              "RelativeToolTip": "KalenderAppBackend\\Controllers\\CalendarController.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAiwC0AAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T14:55:37.033Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T14:55:37.033Z"
             },
             {
               "$type": "Document",
@@ -241,8 +235,7 @@
               "RelativeToolTip": "KalenderAppBackend\\Models\\AppUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T14:16:39.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T14:16:39.054Z"
             },
             {
               "$type": "Document",
@@ -254,8 +247,7 @@
               "RelativeToolTip": "KalenderAppBackend\\Repos\\CalendarRepo.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAQwGcAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T14:33:12.999Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T14:33:12.999Z"
             },
             {
               "$type": "Document",

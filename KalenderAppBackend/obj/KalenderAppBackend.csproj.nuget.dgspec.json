@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj": {}
+    "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj": {
+    "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
+        "projectUniqueName": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
         "projectName": "KalenderAppBackend",
-        "projectPath": "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
+        "projectPath": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\KalenderAppBackend.csproj",
         "packagesPath": "C:\\Users\\uemit\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uemit\\Source\\Repos\\Familienplaner_Backend\\KalenderAppBackend\\obj\\",
+        "outputPath": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -44,7 +44,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0": {
@@ -148,7 +149,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
