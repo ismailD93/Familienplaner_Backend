@@ -13,6 +13,7 @@ public static class Calendarmappers
             Id = familyMember.Id,
             Name = familyMember.UserName,
             CalendarId = familyMember.CalendarId ?? 0,
+            Color = familyMember.Color ?? string.Empty,
         };
     }
 

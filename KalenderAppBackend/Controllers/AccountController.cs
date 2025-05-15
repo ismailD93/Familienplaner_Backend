@@ -299,7 +299,8 @@ public class AccountController : ControllerBase
         {
             Id = appUser.Id,
             Email = appUser.Email,
-            Username = appUser.UserName
+            Username = appUser.UserName,
+            Color = appUser.Color,
         });
     }
 }
