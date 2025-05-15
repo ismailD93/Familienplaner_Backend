@@ -88,7 +88,7 @@ public class CalendarControllerTests
             .ReturnsAsync(new Calendar() { Name = "test" });
 
         var result = await _controller.Create(createCalendarDto);
-
+  
         var okObject = Assert.IsType<OkObjectResult>(result);
         var calendarDto = Assert.IsType<CalendarDto>(okObject.Value);
         Assert.Equal(createCalendarDto.Name, calendarDto.Name);
