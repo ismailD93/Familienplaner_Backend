@@ -1,12 +1,96 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Uemit Tamyol\\source\\repos\\Familienplaner_Backend\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EEED14D0-D5B6-4932-8163-DA765B53B500}|KalenderAppBackend.Tests\\KalenderAppBackend.Tests.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend.tests\\calendarcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEED14D0-D5B6-4932-8163-DA765B53B500}|KalenderAppBackend.Tests\\KalenderAppBackend.Tests.csproj|solutionrelative:kalenderappbackend.tests\\calendarcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B875C77-2F86-4551-873E-C816792DED86}|KalenderAppBackend\\KalenderAppBackend.csproj|solutionrelative:kalenderappbackend\\controllers\\calendarcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EEED14D0-D5B6-4932-8163-DA765B53B500}|KalenderAppBackend.Tests\\KalenderAppBackend.Tests.csproj|c:\\users\\uemit\\source\\repos\\familienplaner_backend\\kalenderappbackend.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EEED14D0-D5B6-4932-8163-DA765B53B500}|KalenderAppBackend.Tests\\KalenderAppBackend.Tests.csproj|solutionrelative:kalenderappbackend.tests\\accountcontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AccountControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend.Tests\\AccountControllerTests.cs",
+              "RelativeDocumentMoniker": "KalenderAppBackend.Tests\\AccountControllerTests.cs",
+              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend.Tests\\AccountControllerTests.cs",
+              "RelativeToolTip": "KalenderAppBackend.Tests\\AccountControllerTests.cs",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAwwHYAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T11:17:12.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CalendarControllerTests.cs",
+              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend.Tests\\CalendarControllerTests.cs",
+              "RelativeDocumentMoniker": "KalenderAppBackend.Tests\\CalendarControllerTests.cs",
+              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend.Tests\\CalendarControllerTests.cs",
+              "RelativeToolTip": "KalenderAppBackend.Tests\\CalendarControllerTests.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowFwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T11:17:00.638Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "a7b9234e-a474-4886-a9ce-90a31fccf713",
+        "Display": 2,
+        "X": -5,
+        "Y": 289,
+        "Width": 1559,
+        "Height": 868,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CalendarController.cs",
+              "DocumentMoniker": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\CalendarController.cs",
+              "RelativeDocumentMoniker": "KalenderAppBackend\\Controllers\\CalendarController.cs",
+              "ToolTip": "C:\\Users\\uemit\\source\\repos\\Familienplaner_Backend\\KalenderAppBackend\\Controllers\\CalendarController.cs",
+              "RelativeToolTip": "KalenderAppBackend\\Controllers\\CalendarController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAADUAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T11:16:13.655Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
