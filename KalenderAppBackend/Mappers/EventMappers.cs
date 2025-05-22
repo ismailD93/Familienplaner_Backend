@@ -14,6 +14,7 @@ public static class EventMappers
             Description = eventDto.Description,
             StartDate = eventDto.StartDate,
             EndDate = eventDto.EndDate,
+            IsDeleted = false,
         };
     }
 }

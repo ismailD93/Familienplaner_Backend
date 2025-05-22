@@ -52,4 +52,28 @@ public class EventRepo : IEventRepo
 
         return list;
     }
+
+    public Task<Event?> UpdateAsync(UpdateEventDto eventModel, int id)
+    {
+        var eventToUpdate = _context.Events.FirstOrDefault(e => e.Id == id);
+        if (eventToUpdate == null)
+        {
+            return Task.FromResult<Event?>(null);
+        }
+        if (eventModel.Title != null)
+        {
+            eventToUpdate.Title = eventModel.Title;
+        }
+        if (eventModel.Description != null)
+        {
+            eventToUpdate.Description = eventModel.Description;
+        }
+        if (eventModel.IsDeleted)
+        {
+            eventToUpdate.IsDeleted = true;
+        }
+        _context.Events.Update(eventToUpdate);
+        _context.SaveChanges();
+        return Task.FromResult<Event?>(eventToUpdate);
+    }
 }

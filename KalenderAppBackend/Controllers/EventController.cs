@@ -1,4 +1,5 @@
-﻿using KalenderAppBackend.Interfaces;
+﻿using KalenderAppBackend.Dtos.Event;
+using KalenderAppBackend.Interfaces;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 
@@ -21,6 +22,20 @@ public class EventController : ControllerBase
 
         if (result == null)
             return NotFound(result);
+
+        return Ok(result);
+    }
+
+    [HttpPut("updateEvent")]
+    public async Task<IActionResult> UpdateEvent([FromBody] UpdateEventDto eventModel, int id)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var result = await _eventRepo.UpdateAsync(eventModel, id);
+
+        if (result == null)
+            return NotFound("event not found");
 
         return Ok(result);
     }

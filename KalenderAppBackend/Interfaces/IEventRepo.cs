@@ -7,4 +7,5 @@ public interface IEventRepo
 {
     Task<Event> CreateAsync(Event eventModel);
     Task<List<EventDto>> GetAllEventsFromCalendarAsync(int calendarId);
+    Task<Event?> UpdateAsync(UpdateEventDto eventModel, int id);
 }

@@ -37,8 +37,10 @@ public class CalendarRepo : ICalendarRepo
         if (existingCalendar == null)
             return null;
 
-        existingCalendar.Name = calendarDto.Name;
-        existingCalendar.IsDeleted = calendarDto.IsDeleted;
+        if (calendarDto.Name != null)
+            existingCalendar.Name = calendarDto.Name;
+        if (calendarDto.IsDeleted)
+            existingCalendar.IsDeleted = calendarDto.IsDeleted;
 
         await _context.SaveChangesAsync();
 
@@ -89,13 +91,13 @@ public class CalendarRepo : ICalendarRepo
         return user;
     }
 
-    public async Task<List<AppUser>> GetAllFamilyMembers(int calendarId) 
+    public async Task<List<AppUser>> GetAllFamilyMembers(int calendarId)
     {
         var familyMembers = _context.Users
             .OfType<AppUser>()
             .Include(u => u.UserEvents)
                 .ThenInclude(ue => ue.Event)
-                .ToList();       
+                .ToList();
 
         return familyMembers;
     }
