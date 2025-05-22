@@ -38,6 +38,7 @@ public class CalendarRepo : ICalendarRepo
             return null;
 
         existingCalendar.Name = calendarDto.Name;
+        existingCalendar.IsDeleted = calendarDto.IsDeleted;
 
         await _context.SaveChangesAsync();
 

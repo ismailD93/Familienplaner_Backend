@@ -303,4 +303,23 @@ public class AccountController : ControllerBase
             Color = appUser.Color,
         });
     }
+
+    [HttpPut("setColor")]
+    [Authorize]
+    public async Task<IActionResult> SetColor(string color)
+    {
+        var username = User.GetUsername();
+        var appUser = await _userManager.FindByNameAsync(username);
+        if (appUser == null)
+        {
+            return Unauthorized();
+        }
+        appUser.Color = color;
+        var result = await _userManager.UpdateAsync(appUser);
+        if (!result.Succeeded)
+        {
+            return BadRequest(result.Errors);
+        }
+        return Ok("Color updated successfully.");
+    }
 }

@@ -34,4 +34,13 @@ public static class Calendarmappers
             Name = calendarModel.Name,
         };
     }
+
+    public static Calendar ToCalendarUpdateDto(this UpdateCalendarDto calendarModel)
+    {
+        return new Calendar
+        {
+            Name = calendarModel.Name,
+            IsDeleted = calendarModel.IsDeleted,
+        };
+    }
 }

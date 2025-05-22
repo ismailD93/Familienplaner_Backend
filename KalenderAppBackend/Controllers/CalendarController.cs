@@ -47,7 +47,7 @@ public class CalendarController : ControllerBase
     {
         if (!ModelState.IsValid)
             return BadRequest(ModelState);
-    
+
         var calendar = await _calendarRepo.GetCalendarByName(name);
 
         if (calendar == null)
@@ -64,6 +64,22 @@ public class CalendarController : ControllerBase
 
         var calendarModel = calendarDto.ToCalendarCreateDto();
         await _calendarRepo.CreateAsync(calendarModel);
+
+        return Ok(calendarModel.ToCalendarDto());
+    }
+
+    [HttpPut("updateCalendar")]
+    public async Task<IActionResult> Update([FromBody] UpdateCalendarDto calendarDto, int id)
+    {
+        if (!ModelState.IsValid)
+            return BadRequest(ModelState);
+
+        var calendarModel = await _calendarRepo.GetByIdAsync(id);
+
+        if (calendarModel == null)
+            return BadRequest("calendar not found");
+
+        var calendarmodel = await _calendarRepo.UpdateAsync(id, calendarDto);
 
         return Ok(calendarModel.ToCalendarDto());
     }
